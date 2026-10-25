@@ -6,7 +6,7 @@ Camera-based temporal semantic scene completion (SSC) uses historical observatio
 
 ## Framework
 
-![Overview of the StateSSC framework](readme_assets/framework.png)
+![Overview of the StateSSC framework](assets/framework.png)
 
 The shared foundation encoder extracts context features and depth distributions from the current and historical images. The current image is lifted into a voxel representation. The historical path uses the fifth and tenth preceding frames and proceeds through three stages:
 
@@ -20,24 +20,24 @@ At each image location, the method retains the four most probable historical dep
 
 The four-way comparison on SemanticKITTI sequence 08 shows the ground truth alongside FoundationSSC, HTCL-S, and StateSSC. In the illustrated scenes, StateSSC preserves the main road layout and roadside vehicles; fine vegetation remains less complete than the ground truth.
 
-![Ground truth, FoundationSSC, HTCL-S, and StateSSC (ours)](readme_assets/semantickitti_08_four_way_preview.gif)
+![Ground truth, FoundationSSC, HTCL-S, and StateSSC (ours)](assets/semantickitti_08_four_way_preview.gif)
 
 ## Quantitative Results
 
 ### SemanticKITTI hidden test set
 
-![Class-wise results on the SemanticKITTI hidden test set](readme_assets/semantickitti_test_table.png)
+![Class-wise results on the SemanticKITTI hidden test set](assets/semantickitti_test_table.png)
 
 StateSSC achieves **51.21% IoU** and **21.10% mIoU** on the hidden test set. Strong class-wise results for road, building, vegetation, and terrain show its ability to recover extensive surfaces and scene structures.
 
 ### SemanticKITTI validation set
 
-![Class-wise results on the SemanticKITTI validation set](readme_assets/semantickitti_val_table.png)
+![Class-wise results on the SemanticKITTI validation set](assets/semantickitti_val_table.png)
 
 On the held-out sequence 08, StateSSC achieves **50.57% IoU** and **21.76% mIoU**. The close agreement with the hidden-test scores supports good generalization across SemanticKITTI sequences.
 
 ### SSCBench-KITTI-360 test set
 
-![Class-wise results on the SSCBench-KITTI-360 test set](readme_assets/kitti360_test_table.png)
+![Class-wise results on the SSCBench-KITTI-360 test set](assets/kitti360_test_table.png)
 
 StateSSC achieves **49.27% IoU** and **22.07% mIoU** on SSCBench-KITTI-360, with strong class-wise results for road, parking, terrain, fence, pole, and traffic sign. Its performance on a second benchmark supports the applicability of the temporal design across dataset settings. Across these evaluations, the structural results are consistent with preserving distinct surface-related historical information through state-aware aggregation and refinement.
