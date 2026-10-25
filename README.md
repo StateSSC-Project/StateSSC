@@ -21,6 +21,7 @@ At each image location, the method retains the four most probable historical dep
 The four-way comparison on SemanticKITTI sequence 08 shows the ground truth alongside FoundationSSC, HTCL-S, and StateSSC. In the illustrated scenes, StateSSC preserves the main road layout and roadside vehicles; fine vegetation remains less complete than the ground truth.
 
 ![Ground truth, FoundationSSC, HTCL-S, and StateSSC (ours)](assets/semantickitti_08_four_way_preview.gif)
+
 ## Quantitative Results
 
 ### SemanticKITTI hidden test set
