@@ -50,5 +50,5 @@ StateSSC achieves **49.27% IoU** and **22.07% mIoU** on SSCBench-KITTI-360, with
 
 | Method | Total Parameters (M) | Trainable Parameters (M) | Mean Inference Time (s/frame) ↓ | Peak Inference Memory (MiB) ↓ |
 |---|---:|---:|---:|---:|
-| FoundationSSC | 440.882 | 63.785 | 1.962 | 4514.0 |
+| Baseline | 440.882 | 63.785 | 1.962 | 4514.0 |
 | StateSSC V4 | 441.229 | 64.131 | 1.973 | 4601.7 |
