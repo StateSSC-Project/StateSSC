@@ -45,3 +45,10 @@ On the held-out sequence 08, StateSSC achieves **50.57% IoU** and **21.76% mIoU*
 ![Class-wise results on the SSCBench-KITTI-360 test set](assets/kitti360_test_table.png)
 
 StateSSC achieves **49.27% IoU** and **22.07% mIoU** on SSCBench-KITTI-360, with strong class-wise results for road, parking, terrain, fence, pole, and traffic sign. Its performance on a second benchmark supports the applicability of the temporal design across dataset settings. Across these evaluations, the structural results are consistent with preserving distinct surface-related historical information through state-aware aggregation and refinement.
+
+### Single-GPU Inference Performance Results
+
+| Method | Total Parameters (M) | Trainable Parameters (M) | Mean Inference Time (s/frame) ↓ | Peak Inference Memory (MiB) ↓ |
+|---|---:|---:|---:|---:|
+| FoundationSSC | 440.882 | 63.785 | 1.962 | 4514.0 |
+| StateSSC V4 | 441.229 | 64.131 | 1.973 | 4601.7 |
